@@ -27,3 +27,14 @@ class Child2 : Hair {
         println("Registered child hair color is: $childHairColor")
     }
 }
+
+fun main() {
+    val runParent = Parent()
+    runParent.printVariables()
+
+    val runChild1 = Child1()
+    runChild1.printVariables()
+
+    val runChild2 = Child2()
+    runChild2.hairColor()
+}
